@@ -1,0 +1,12 @@
+body{
+    background: #f5f5f5;
+}
+.text_small{
+    font-size:0.8rem;
+}
+/*.dropdown*/
+/*> li:hover.dropdown-menu{display: block}*/
+
+.dropdown :hover > .dropdown-menu {display: block}
+
+.dropdown-menu .dropdown-item:hover{background: #7e8c8d}

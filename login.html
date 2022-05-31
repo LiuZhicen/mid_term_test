@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/comm.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <iframe src="header.html" class="my_header" frameborder="0" scrolling="no"></iframe>
+</header>
+<div class="container" style="margin-top: 60px ; width: 600px">
+
+
+        <h2>会员登录</h2>
+
+        <form action="index.html" class="needs-validation" novalidate style="margin-top: 20px;">
+            <div class="form-group">
+                <label for="uname">Username:</label>
+                <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                <div class="valid-feedback">√</div>
+                <div class="invalid-feedback">请输入用户名！</div>
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                <div class="valid-feedback">√</div>
+                <div class="invalid-feedback">请输入密码！</div>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember" required>
+                    <a class="" href="" data-toggle="collapse" data-target="#demo">同意协议</a>
+                    <div id="demo" class="collapse">
+                             *您须遵循《中国互联网用户安全协议》
+                    </div>
+                    <div class="valid-feedback">已同意√</div>
+                    <div class="invalid-feedback">同意协议才能提交。</div>
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary"  style="margin-left: 150px;margin-top: 20px">登录</button>
+            <button type="" class="btn btn-primary" style="margin-left: 100px;margin-top: 20px">注册</button>
+        </form>
+
+
+</div>
+
+<script>
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            // 获取表单验证样式
+            var forms = document.getElementsByClassName('needs-validation');
+            // 循环并禁止提交
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+
+</script>
+</body>
+</html>

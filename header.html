@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/comm.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <title>Title</title>
+<body>
+<div class="jumbotron jumbotron-fluid" style="background-color: white">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-sm-3 mt-2" style="text-align: right">
+            <a class="navbar-brand" href=""><img class="w-75"  src="img/header/logo.png" alt=""/></a>
+        </div>
+        <div class="col-lg-6 col-sm-6 mt-3" >
+<!--            <div class="row">-->
+<!--                <div class="col-8" >-->
+<!--                    <input class="form-control inp" type="text"/>-->
+<!--                </div>-->
+<!--                <div class="col"  style="text-align: left">-->
+<!--                    <a class="navbar-brand" href=""><img class="w-25" src="img/header/search.png" alt=""/></a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--&lt;!&ndash;                <span class="input-group-btn">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <button class="btn" type="button">搜索</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                </span>&ndash;&gt;-->
+            <nav class="navbar navbar-expand-md text-dark" style="background-color: white ;left: 20px">
+                <a class="navbar-brand" href="#" data-toggle="popover" title="广州恒大足球俱乐部">&nbsp广州队&nbsp&nbsp&nbsp</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="jianjie.html" data-toggle="popover" target="index.html" title="球队简介">简介&nbsp&nbsp&nbsp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="popover" title="球队赛程">赛程&nbsp&nbsp&nbsp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="popover" title="球员信息">球员&nbsp&nbsp&nbsp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="popover" title="球队新闻资讯">资讯&nbsp&nbsp&nbsp</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="col-lg-3  col-sm-3 mt-4" >
+            <div class="row ">
+                <div class="col" >
+                    <a href="" ><img class="img_size" src="img/header/home.png" alt=""/></a>
+                </div>
+                <div class="col" >
+                    <a href="" style="left: 90px"><img class="img_size" src="img/header/person.png" alt="" onclick="tc()"/></a>
+                    <script>
+                        function tc() {
+                              alert('您尚未登录！')
+                        }
+                    </script>
+                </div>
+                <div class="col">
+                    <a href=""><img class="img_size" src="img/header/message.png" alt=""/></a>
+                </div>
+
+                <div class="col " >
+                    <a href="login.html">注册</a>
+                </div>
+                <div class="col">
+                    <a href="login.html" target="index.html">登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

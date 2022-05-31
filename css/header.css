@@ -1,0 +1,8 @@
+.img_size{width: 70%}
+.breadcrumb-item+.breadcrumb-item:before{
+    content: "|";
+}
+.navbar{
+    background: #d3d6d8;
+    font-size: large;
+}
